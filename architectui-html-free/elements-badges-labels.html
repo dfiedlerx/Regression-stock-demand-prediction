@@ -23,7 +23,7 @@
 <link href="./main.css" rel="stylesheet"></head>
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
-        <div class="app-header header-shadow">
+        <div class="app-header header-shadow bg-dark header-text-light">
             <div class="app-header__logo">
                 <div class="logo-src"></div>
                 <div class="header__pane ml-auto">
@@ -62,7 +62,7 @@
                         </div>
                         <button class="close"></button>
                     </div>
-                    <ul class="header-menu nav">
+                    <ul class="header-menu nav" style="display: none;">
                         <li class="nav-item">
                             <a href="javascript:void(0);" class="nav-link">
                                 <i class="nav-link-icon fa fa-database"> </i>
@@ -110,7 +110,7 @@
                                         VP People Manager
                                     </div>
                                 </div>
-                                <div class="widget-content-right header-user-info ml-3">
+                                <div style="display: none;" class="widget-content-right header-user-info ml-3">
                                     <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
                                     </button>
@@ -398,7 +398,7 @@
                 </div>
             </div>
         </div>        <div class="app-main">
-                <div class="app-sidebar sidebar-shadow">
+                <div class="app-sidebar sidebar-shadow bg-dark sidebar-text-light">
                     <div class="app-header__logo">
                         <div class="logo-src"></div>
                         <div class="header__pane ml-auto">
@@ -678,10 +678,10 @@
                                     </div>
                                 </div>
                                 <div class="page-title-actions">
-                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                    <button type="button" style="display: none;" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
                                         <i class="fa fa-star"></i>
                                     </button>
-                                    <div class="d-inline-block dropdown">
+                                    <div class="d-inline-block dropdown" style="display: none !important;" >
                                         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
                                             <span class="btn-icon-wrapper pr-2 opacity-7">
                                                 <i class="fa fa-business-time fa-w-20"></i>

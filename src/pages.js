@@ -267,7 +267,17 @@ const pages = [
             heading_icon: 'pe-7s-box2 icon-gradient bg-amy-crisp'
         },
         template: './src/pages/dashboards/recomendation.hbs'
-    }
+    },
+
+    {
+        output: './adicionar-remover-produtos.html',
+        content: {
+            title: 'Adicionar e remover produtos',
+            description: 'Entrada e saida de intens no estoque.',
+            heading_icon: 'pe-7s-filter icon-gradient bg-warm-flame'
+        },
+        template: './src/pages/dashboards/add_remove_products.hbs'
+    },
 
 ];
 
