@@ -1,0 +1,10 @@
+.layers {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+}
+
+.bd, .layers {
+    border-radius: 8px;
+}

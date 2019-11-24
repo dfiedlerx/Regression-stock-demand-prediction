@@ -1,0 +1,39 @@
+.black-bg-opacity {
+
+  background-color: rgba(0,0,0,0.75);
+
+}
+
+.petronas-button, .petronas-button:active, .checkbox-info input[type=checkbox]:checked + label::before {
+
+  background-color: $petronas;
+  border-color: $darkPetronas;
+  color: #FFF;
+
+}
+
+.petronas-button:hover {
+
+  background-color: $darkPetronas;
+  border-color: $darkPetronas;
+  color: #FFF;
+
+}
+
+.header .header-container .nav-left .notifications .counter, .header .header-container .nav-right .notifications .counter  {
+
+  background-color: $petronas;
+
+}
+
+.c-petronas {
+
+  color: $petronas;
+
+}
+
+.c-dark-petronas {
+
+  color: $darkPetronas;
+
+}
