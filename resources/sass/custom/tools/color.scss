@@ -12,15 +12,13 @@
 
 }
 
-.petronas-button:hover {
+.bg-dark-petronas, .petronas-button:hover {
 
   background-color: $darkPetronas;
-  border-color: $darkPetronas;
-  color: #FFF;
 
 }
 
-.header .header-container .nav-left .notifications .counter, .header .header-container .nav-right .notifications .counter  {
+.bg-petronas, .header .header-container .nav-left .notifications .counter, .header .header-container .nav-right .notifications .counter  {
 
   background-color: $petronas;
 

@@ -10,7 +10,7 @@
             <div class="bd bgc-white">
                 <div class="layers">
                     <div class="layer w-100 pX-20 pT-20">
-                        <h6 class="lh-1">Monthly Stats</h6>
+                        <h6 class="lh-1">Variação de Vendas</h6>
                     </div>
                     <div class="layer w-100 p-20">
                         <canvas id="line-chart" height="220"></canvas>
@@ -27,14 +27,14 @@
                         <h6 class="lh-1">Sales Report</h6>
                     </div>
                     <div class="layer w-100">
-                        <div class="bgc-light-blue-500 c-white p-20">
+                        <div class="bg-petronas c-white p-20">
                             <div class="peers ai-c jc-sb gap-40">
                                 <div class="peer peer-greed">
                                     <h5>November 2017</h5>
-                                    <p class="mB-0">Sales Report</p>
+                                    <p class="mB-0">Mais Vendidos</p>
                                 </div>
                                 <div class="peer">
-                                    <h3 class="text-right">$6,000</h3>
+                                    <h3 class="text-right">Total: 2562</h3>
                                 </div>
                             </div>
                         </div>

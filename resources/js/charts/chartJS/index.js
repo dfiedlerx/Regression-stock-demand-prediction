@@ -17,19 +17,12 @@ export default (function () {
       data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
-          label                : 'Series A',
-          backgroundColor      : 'rgba(237, 231, 246, 0.5)',
-          borderColor          : COLORS['deep-purple-500'],
-          pointBackgroundColor : COLORS['deep-purple-700'],
+          label                : 'Quantidade de vendas',
+          backgroundColor      : 'rgba(56, 176, 157, 0.5)',
+          borderColor          : 'rgba(57, 142, 128, 0.5)',
+          pointBackgroundColor : COLORS['deep-grey-700'],
           borderWidth          : 2,
-          data                 : [60, 50, 70, 60, 50, 70, 60],
-        }, {
-          label                : 'Series B',
-          backgroundColor      : 'rgba(232, 245, 233, 0.5)',
-          borderColor          : COLORS['blue-500'],
-          pointBackgroundColor : COLORS['blue-700'],
-          borderWidth          : 2,
-          data                 : [70, 75, 85, 70, 75, 85, 70],
+          data                 : [60, 50, 78, 55, 60, 55, 80],
         }],
       },
 
