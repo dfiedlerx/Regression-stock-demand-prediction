@@ -3,29 +3,29 @@
 return [
 
 	// My controllers
-	"success_store"   => "Item added",
-	"success_update"  => "Updated successfully",
-	"success_destroy" => "Removed successfully",
+	"success_store"   => "Item adicionado",
+	"success_update"  => "Atualizado com sucesso",
+	"success_destroy" => "Removido com sucesso",
 
 	// My Views
-	"manage"       => "manage",
-	"edit_title"   => "Edit Item",
-	"delete_title" => "Delete Item",
-	"add_new_item" => "new",
-	"update_item" => "update",
+	"manage"       => "Gerenciar",
+	"edit_title"   => "Editar",
+	"delete_title" => "Deletar",
+	"add_new_item" => "Criar",
+	"update_item" => "Atualizar",
 
 	// View buttons
-	"add_button"    => "Add",
-	"edit_button"    => "Edit",
+	"add_button"    => "Adicionar",
+	"edit_button"    => "Editar",
 
 	// Login, Logout ..etc
-	"start_session"      => "Sign in to start your session",
-	"remember_me"        => "Remember Me",
-	"forgot_password"    => "I forgot my password",
-	"login_btn"          => "Sign In",
-	"reset_password"     => "Reset Password",
-	"reset_password_btn" => "Send reset link",
-	"connect"            => "Loggin",
+	"start_session"      => "Entre para iniciar sua sessão",
+	"remember_me"        => "Lembrar de mim",
+	"forgot_password"    => "Esqueci minha senha",
+	"login_btn"          => "Entrar",
+	"reset_password"     => "Recuperar senha",
+	"reset_password_btn" => "Enviar link de recuperação",
+	"connect"            => "Entrar",
 
 
 

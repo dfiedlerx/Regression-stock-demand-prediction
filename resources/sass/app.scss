@@ -1,3 +1,4 @@
+@import '_variables';
 @import 'spec/settings/index';
 @import 'spec/tools/index';
 @import "~bootstrap/scss/bootstrap";
@@ -90,8 +91,6 @@ img {
 }
 
 .form-control-file{border: 1px solid #cbcbcb;}
-
-@import '_variables';
 
 //Custom SCSS
 @import 'custom/index';

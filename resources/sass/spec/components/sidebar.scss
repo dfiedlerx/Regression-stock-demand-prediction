@@ -188,16 +188,12 @@
   }
 
   .sidebar-link {
-    &.active::before {
-      background: $md-blue-500;
-      border-radius: 50%;
-      content: '';
-      display: block;
-      height: 8px;
-      left: -4px;
-      position: absolute;
-      top: calc(50% - 4px);
-      width: 8px;
+    &.active {
+
+      background: $darkPetronas !important;
+      display: block !important;
+      color: #FFF !important;
+
     }
   }
 
@@ -253,9 +249,6 @@
         color: $default-dark;
         text-decoration: none;
 
-        .icon-holder {
-          color: $default-info;
-        }
       }
     }
   }

@@ -4,41 +4,41 @@
 @endphp
 
 <li class="nav-item mT-30">
-    <a class="sidebar-link {{ starts_with($route, ADMIN . '.dash') ? 'active' : '' }}" href="{{ route(ADMIN . '.dash') }}">
+    <a class="sidebar-link" href="/">
         <span class="icon-holder">
-            <i class="c-dark-petronas ti-home"></i>
+            <i class="ti-home"></i>
         </span>
         <span class="title">Início</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="sidebar-link" href="/previsao-vendas">
+    <a class="sidebar-link" href="/lista-produtos">
         <span class="icon-holder">
-            <i class="c-dark-petronas ti-layout-list-thumb"></i>
+            <i class="ti-layout-list-thumb"></i>
         </span>
         <span class="title">Lista de Produtos</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="sidebar-link" href="/previsao-vendas">
+    <a class="sidebar-link" href="/gerenciar-produtos">
         <span class="icon-holder">
-            <i class="c-dark-petronas ti-pencil"></i>
+            <i class="ti-pencil"></i>
         </span>
-        <span class="title">Adi/Rem Produtos</span>
+        <span class="title">Gerenciar Produtos</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="sidebar-link" href="/previsao-vendas">
+    <a class="sidebar-link" href="/estimativa-vendas">
         <span class="icon-holder">
-            <i class="c-dark-petronas ti-share"></i>
+            <i class="ti-share"></i>
         </span>
-        <span class="title">Previsão de Vendas</span>
+        <span class="title">Estimativa de Vendas</span>
     </a>
 </li>
 <li class="nav-item">
-    <a class="sidebar-link {{ starts_with($route, ADMIN . '.users') ? 'active' : '' }}" href="{{ route(ADMIN . '.users.index') }}">
+    <a class="sidebar-link" href="/users">
         <span class="icon-holder">
-            <i class="c-dark-petronas ti-settings"></i>
+            <i class="ti-settings"></i>
         </span>
         <span class="title">Configurações</span>
     </a>
