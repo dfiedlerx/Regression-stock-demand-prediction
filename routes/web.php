@@ -17,7 +17,8 @@ Route::group(['middleware'=>['auth', 'Role:10']], function () {
     Route::get('/', 'DashboardController@index')->name('dash');
     Route::resource('users', 'UserController');
     Route::resource('estimativa-vendas', 'PrevisaoController');
-    Route::resource('lista-produtos', 'ListaController');
+    Route::get('lista-produtos', 'ListaController@index');
+    Route::get('lista-produtos/edit', 'ListaController@edit');
     Route::resource('gerenciar-produtos', 'GerenciarController');
 });
 

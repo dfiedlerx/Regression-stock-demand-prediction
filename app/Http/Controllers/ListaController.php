@@ -16,4 +16,11 @@ class ListaController extends Controller
         return view('admin.dashboard.lista.index', compact('items'));
     }
 
+    public function edit()
+    {
+        $items = User::latest('updated_at')->get();
+
+        return view('admin.dashboard.lista.edit', compact('items'));
+    }
+
 }

@@ -8,7 +8,12 @@
                     <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Previsões de vendas do próximo mês</font></font>
                 </h4>
                 <p>
-                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usando a marcação de tabela mais básica, </font></font><code class="highlighter-rouge">.table</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">veja </font><font style="vertical-align: inherit;">como as </font><font style="vertical-align: inherit;">tabelas baseadas são exibidas no Bootstrap. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todos os estilos de tabela são herdados no Bootstrap 4</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , o que significa que todas as tabelas aninhadas serão estilizadas da mesma maneira que o pai.</font></font>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Usando como base os registros de venda, os dados estimados de venda para o próximo mês estão
+                            listados abaixo.
+                        </font>
+                    </font>
                 </p>
                 <table class="table">
                     <thead>
@@ -20,10 +25,13 @@
                             <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Produto</font></font>
                         </th>
                         <th scope="col">
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qtde. atual</font></font>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qtde. estoque</font></font>
                         </th>
                         <th scope="col">
                             <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qtde. para compra</font></font>
+                        </th>
+                        <th scope="col">
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Qtde. de Vendas</font></font>
                         </th>
                     </tr>
                     </thead>
