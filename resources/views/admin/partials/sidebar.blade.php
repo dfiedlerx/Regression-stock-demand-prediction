@@ -8,11 +8,11 @@
 						<div class="peers ai-c fxw-nw">
 							<div class="peer">
 								<div class="logo text-center">
-									<img class="menu-tollbar-logo" src="/images/logo.png" alt="">
+									<img class="menu-tollbar-logo" src="/images/logo.svg" alt="">
 								</div>
 							</div>
 							<div class="peer peer-greed">
-								<h5 class="lh-1 mB-0 logo-text">EevoS</h5>
+								<h5 class="lh-1 mB-0 logo-text">Prophet</h5>
 							</div>
 						</div>
 					</a>

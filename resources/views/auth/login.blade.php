@@ -4,7 +4,7 @@
     <div class="item-full-absolute-align login-content">
 
         <div class="login-logo-content text-center">
-            <img class="margin-center login-logo" src="/images/logo.png" alt="">
+            <img class="margin-center login-logo" src="/images/logo.svg" alt="">
             <div class="clearfix"></div>
         </div>
         <h4 class="fw-300 c-grey-900 text-center mB-20">Entrar</h4>

@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="google" content="notranslate">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'EevoS') }}</title>
+    <title>{{ config('app.name', 'Prophet') }}</title>
 
     <!-- Styles -->
 	<link href="{{ mix('/css/app.css') }}" rel="stylesheet">

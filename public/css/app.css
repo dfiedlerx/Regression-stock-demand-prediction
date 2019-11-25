@@ -80958,8 +80958,8 @@ img {
 
 .menu-tollbar-logo {
   max-width: 100%;
-  max-height: 55px;
-  margin-top: 6px;
+  max-height: 48px;
+  margin-top: 9px;
 }
 
 .sidebar {
@@ -80986,12 +80986,12 @@ img {
 }
 
 .login-logo-content {
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
 }
 
 .login-logo {
   max-width: 100%;
-  max-height: 70px;
+  max-height: 82px;
 }
 
 .register-content {
