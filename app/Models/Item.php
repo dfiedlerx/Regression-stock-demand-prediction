@@ -11,7 +11,14 @@ class Item extends Model
     protected $fillable =
         [
             'name',
-            'category_id'
+            'category_id',
+            'stock'
         ];
+
+    public function categorias() {
+
+        return $this->belongsTo('App\Models\Categoria', 'category_id');
+
+    }
 
 }

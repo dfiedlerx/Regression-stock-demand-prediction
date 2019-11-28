@@ -13,6 +13,6 @@ class Venda extends Model
             'shop_id',
             'item_id',
             'item_price',
-            'int_cnt_Day'
+            'int_cnt_day'
         ];
 }

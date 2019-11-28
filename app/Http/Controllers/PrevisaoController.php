@@ -13,10 +13,8 @@ class PrevisaoController extends Controller
     {
         $items = User::latest('updated_at')->get();
 
-        $previsoes = Estimativa::with('itens')->orderBy('average')->get();
+        $estimativas = Estimativa::with('itens')->orderByDesc('average')->get();
 
-        var_dump($previsoes);
-
-        return view('admin.dashboard.previsao', compact('items'));
+        return view('admin.dashboard.previsao', ['items' => $items, 'estimativas' => $estimativas]);
     }
 }

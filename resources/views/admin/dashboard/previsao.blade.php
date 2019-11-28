@@ -36,48 +36,36 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font>
-                        </th>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marca</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Otto</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@mdo</font></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font>
-                        </th>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jacob</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thornton</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@gordura</font></font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font>
-                        </th>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Larry</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">o pássaro</font></font>
-                        </td>
-                        <td>
-                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@Twitter</font></font>
-                        </td>
-                    </tr>
+                    <?php
+                    foreach ($estimativas as $value) {
+
+                        if (empty($value->itens) || $value->average - $value->itens->stock <= 0) {
+
+                            continue;
+
+                        }
+                    ?>
+                        <tr>
+                            <th scope="row">
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $value->itens->id; ?></font></font>
+                            </th>
+                            <td>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $value->itens->name; ?></font></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $value->itens->stock; ?></font></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $value->average - $value->itens->stock; ?></font></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><?php echo $value->average; ?></font></font>
+                            </td>
+                        </tr>
+
+                    <?php
+                    }
+                    ?>
                     </tbody>
                 </table>
             </div>

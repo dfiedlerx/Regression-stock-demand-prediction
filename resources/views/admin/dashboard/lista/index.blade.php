@@ -31,16 +31,16 @@
             </tfoot>
 
             <tbody>
-            @foreach ($items as $item)
+            @foreach ($produtos as $produto)
                 <tr>
-                    <td><a href="/lista-produtos/edit">{{ $item->name }}</a></td>
-                    <td>{{ $item->email }}</td>
-                    <td></td>
-                    <td></td>
+                    <td><a href="/lista-produtos/edit">{{ $produto->id }}</a></td>
+                    <td>{{ $produto->name }}</td>
+                    <td>{{ $produto->categorias->name }}</td>
+                    <td>{{  $produto->stock }}</td>
                     <td>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="/lista-produtos/edit" title="{{ trans('app.edit_title') }}" class="btn btn-primary btn-sm"><span class="ti-pencil"></span></a>
+                                <a href="/lista-produtos/edit/{{  $produto->id }}" title="{{ trans('app.edit_title') }}" class="btn btn-primary btn-sm"><span class="ti-pencil"></span></a>
                             </li>
                         </ul>
                     </td>
