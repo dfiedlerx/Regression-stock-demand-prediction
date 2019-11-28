@@ -7,4 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Item extends Model
 {
     protected $table = 'itens';
+
+    protected $fillable =
+        [
+            'name',
+            'category_id'
+        ];
+
 }
