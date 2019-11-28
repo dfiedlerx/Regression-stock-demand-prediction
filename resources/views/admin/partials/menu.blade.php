@@ -19,6 +19,7 @@
         <span class="title">Lista de Produtos</span>
     </a>
 </li>
+<!--
 <li class="nav-item">
     <a class="sidebar-link" href="/gerenciar-produtos">
         <span class="icon-holder">
@@ -26,7 +27,7 @@
         </span>
         <span class="title">Gerenciar Produtos</span>
     </a>
-</li>
+</li> -->
 <li class="nav-item">
     <a class="sidebar-link" href="/estimativa-vendas">
         <span class="icon-holder">
