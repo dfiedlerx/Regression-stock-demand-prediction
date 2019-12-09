@@ -13,21 +13,25 @@ class DashboardController extends Controller
     {
 
         $graficoVendas =
-            Venda::select
-            (
-                DB::raw
-                (
-                    '
-                    YEAR(DATE) AS year,
-                    MONTH(DATE) AS month_number,
-                    CONCAT(MONTH(DATE), "/",  Year(DATE)) AS month_year,
-                    SUM(int_cnt_day) AS sales
-                    '
-                )
-            )
-            ->groupBy(DB::raw('Year(DATE)'), DB::raw('MONTH(DATE)'))
-            ->orderBy('Date')
-            ->get();
+            array_reverse(
+                Venda::select
+                    (
+                        DB::raw
+                        (
+                            '
+                            YEAR(DATE) AS year,
+                            MONTH(DATE) AS month_number,
+                            CONCAT(MONTH(DATE), "/",  Year(DATE)) AS month_year,
+                            SUM(int_cnt_day) AS sales
+                            '
+                        )
+                    )
+                    ->groupBy(DB::raw('Year(DATE)'), DB::raw('MONTH(DATE)'))
+                    ->orderByDesc('Date')
+                    ->limit(30)
+                    ->get()
+                    ->toArray()
+            );
 
 
         $graficoVendas =
@@ -39,7 +43,7 @@ class DashboardController extends Controller
         $listaEstoqueItens =
             Item::groupBy(DB::raw('RAND()'))
                 ->with('categorias')
-                ->limit(10)
+                ->limit(20)
                 ->get();
 
         return view('admin.dashboard.index', ['graficoVendas' => $graficoVendas, 'listaEstoqueItens' => $listaEstoqueItens]);
@@ -60,11 +64,11 @@ class DashboardController extends Controller
 
             if ($value) {
 
-                $labels .= "'" . $this->getMonthName($row->month_number) . '/' . $row->year . "'";
+                $labels .= "'" . $this->getMonthName($row['month_number']) . '/' . $row['year'] . "'";
 
             } else {
 
-                $labels .= $row->sales;
+                $labels .= $row['sales'];
 
             }
 
