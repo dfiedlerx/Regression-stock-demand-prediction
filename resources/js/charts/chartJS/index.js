@@ -6,34 +6,6 @@ export default (function () {
   // @Line Charts
   // ------------------------------------------------------
 
-  const lineChartBox = document.getElementById('line-chart');
-
-  if (lineChartBox) {
-    const lineCtx = lineChartBox.getContext('2d');
-    lineChartBox.height = 80;
-
-    new Chart(lineCtx, {
-      type: 'line',
-      data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-          label                : 'Quantidade de vendas',
-          backgroundColor      : 'rgba(56, 176, 157, 0.5)',
-          borderColor          : 'rgba(57, 142, 128, 0.5)',
-          pointBackgroundColor : COLORS['deep-grey-700'],
-          borderWidth          : 2,
-          data                 : [60, 50, 78, 55, 60, 55, 80],
-        }],
-      },
-
-      options: {
-        legend: {
-          display: false,
-        },
-      },
-
-    });
-  }
 
   // ------------------------------------------------------
   // @Bar Charts
